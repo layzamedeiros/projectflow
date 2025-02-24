@@ -1,9 +1,11 @@
 :root {
     --cor-fundo-primario: #212121;
     --cor-fundo-secundario: #2F2F2F;
-    --cor-texto-principal: #ffffff;
-    --cor-texto-secundario: #6A15AF;
-    --fonte-principal: 'Inter', sans-serif;
+    --cor-texto-principal: #E7E7E7;
+    --cor-texto-secundario: #7C3AED;
+    --input-border: #888;
+    --outline-border-input: #aaaaaa;
+    --fonte-principal: 'Quicksand', sans-serif;
 }
 
 * {
@@ -20,8 +22,12 @@ body {
     height: 100vh;
 }
 
+.logo {
+    width: 20px;
+}
+
 nav.menu {
-    width: 250px;
+    width: 270px;
     height: 100%;
     background-color: var(--cor-fundo-secundario);
     position: fixed;
@@ -40,9 +46,7 @@ nav.menu .logo {
 }
 
 nav.menu .logo img {
-    width: 60px;  
-    height: 68px; 
-    object-fit: contain;  
+    width: 50px;  
 }
 
 nav.menu img {
@@ -59,7 +63,7 @@ nav.menu p {
 }
 
 nav.menu h1 {
-    font-size: 20px;
+    font-size: 1.6em;
     font-weight: bold;
     color: var(--cor-texto-secundario);
     display: flex;
@@ -112,6 +116,17 @@ nav.menu a:active {
     color: var(--cor-texto-secundario);
 }
 
+section {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+article {
+    min-width: 300px;
+    max-width: 350px;
+}
+
 main {
     margin-left: 250px; 
     padding: 20px;
@@ -133,13 +148,12 @@ h3 {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 
 .todo-icon {
     width: 24px;
     height: auto; 
-    margin-right: 15px; 
 }
 
 .todo h3 {
@@ -148,6 +162,10 @@ h3 {
     margin: 0; 
 }
 
+.more-img {
+    width: 20px;
+    margin: 0 10px 0 0;
+}
 
 .tasks {
     display: flex;
@@ -158,19 +176,25 @@ h3 {
     padding: 10px;    
 }
 
-input {
-    justify-content: right;
+.new-class-input {
     background-color: transparent;
-    border: none;
-    outline: none;
+    border: 1px solid var(--input-border);
     color: var(--cor-texto-principal);
     font-size: 16px;
+    padding: 10px ;
+    border-radius: 5px;
+    
 }
 
-input::placeholder {
-    color: #888;              
-    font-size: 16px;          
-    font-style: italic;      
+.new-class-input:focus {
+    outline: 1px solid var(--outline-border-input);
+
+}
+
+.new-class-input::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--input-border);              
+    font-size: 16px;             
 }
 
 p {
@@ -185,13 +209,13 @@ p {
 
 .dropdown-btn {
     margin-left: 0;
-    font-size: 10px;
+    font-size: 0.9em;
     font-family: var(--fonte-principal);
-    font-weight: 500;
+    font-weight: 600;
     background-color: #535151;
     color: var(--cor-texto-principal);
     padding: 5px;
-    margin: 20px 0px;
+    margin-top: 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -215,7 +239,6 @@ p {
     font-size: 12px;
     font-family: var(--fonte-principal);
     font-weight: 600;
-    text-decoration: none;
     display: inline-block;       
     text-align: left;             
     justify-content: left;       
@@ -224,6 +247,20 @@ p {
     line-height: 1.5;     
     border-radius: 20px;     
     border: none;     
+}
+
+.created-content button {
+    font-size: 10px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    display: inline;       
+    text-align: left;             
+    justify-content: left;       
+    padding: 5px 12px;           
+    margin: 15px 0px 5px 0px;
+    line-height: 1.5;     
+    border-radius: 20px;     
+    border: none;  
 }
 
 .desing {
@@ -247,8 +284,6 @@ p {
 } 
 
 .box {
-    width: 20%; 
-    height: 20vh;
     margin-bottom: 20px;
     padding: 25px; 
     background-color: var(--cor-fundo-secundario);
@@ -266,4 +301,9 @@ h3 {
 p {
     font-size: 16px;
     color: var(--cor-texto-principal);
+}
+
+.phase {
+    display: flex;
+    gap: 10px;
 }
