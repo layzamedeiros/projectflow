@@ -8,118 +8,147 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/icone.svg" type="image/x-icon">
+    <link rel="icon" href="img/logoico.ico" type="image/x-icon">
 </head>
 <body>
-    <nav class="menu">
+    <header>
         <div class="logo">
             <img src="img/logo.svg" alt="logo">
             <h1>ProjectFlow</h1>
         </div>
-        <ul>
-            <li>
+        <nav class="menu">
+            <div>
                 <a href="#">
                     <img src="img/meus-projetos.svg" alt="Meus Projetos">
                     <p>Meus projetos</p>
                 </a>
-            </li>
-            <li>
                 <a href="#">
                     <img src="img/minhas-tarefas.svg" alt="Minhas Tarefas">
                     <p>Minhas Tarefas</p>
                 </a>
-            </li>
-            <li>
                 <a href="#">
                     <img src="img/minha-conta.svg" alt="Minha Conta">
                     <p>Minha conta</p>
                 </a>
-            </li>
-            <li>
                 <a href="#">
-                    <img src="img/configurações.svg" alt="Configurações">
+                    <img src="img/configuracoes.svg" alt="Configurações">
                     <p>Configurações</p>
                 </a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+            <a href="#" class="exit">
+                <img src="img/sair.svg" alt="Sair do ProjectFlow">
+                <p>Sair</p>
+            </a>
+        </nav>
+    </header>
     <main>
         <div class="content">
-            <div class="titulo">
-                <h2>Minhas Tarefas</h2> 
-                <img src="img/icone-add-etapa.svg" alt="">
-                <img src="img/icone-compartilhar.svg" alt="">
+            <div class="project-config-header">
+                <h2 class="project-name">Example Project</h2> 
+                <div class="project-config">
+                    <button type="subtmit" class="filter-button">
+                        <img src="img/filter.svg" alt="Filtrar">
+                        <p>Filtrar</p>
+                    </button>
+                    <div class="search">
+                        <input type="text" class="search-tasks-input" placeholder="Busque por tarefas, categorias ou responsáveis...">
+                        <button type="submit" class="search-task-button">
+                            Buscar
+                        </button>
+                    </div>
+                    <img src="img/icone-add-etapa.svg" alt="Adicionar nova etapa">
+                    <img src="img/icone-compartilhar.svg" alt="Compartilhar projeto">
+                </div>
             </div>
             <section>
-                <article>
-                    <div class="todo">
+                <article class="step">
+                    <div class="step-head">
                         <div class="phase">
-                            <img src="img/icone_to-do.svg" alt="Ícone To-do" class="todo-icon">
-                            <h3>To-do</h3>
+                            <p class="step-number-one-color step-number-circle">1</p>
+                            <h3 class="step-name">To-do</h3>
                         </div>
-                        <img src="img/more.png" class="more-img" alt="Mais opções">
+                        <img src="img/more.png" class="step-more-img" alt="Mais opções">
                     </div>
-                    <div class="box">
-                        <div class="tasks">
-                           <input type="text" class="new-class-input" placeholder="Digite a Task">
-                            <div class="dropdown">
-                                <button class="dropdown-btn">Adicionar Categorias</button>
-                                <div class="dropdown-content">
-                                    <button class="desing">Desing</button>
-                                    <button class="desenvolvimento">Desenvolvimento</button>
-                                    <button class="marketing">Marketing</button>
-                                    <button class="QA">Q&A</button>
-                                </div>
-                            </div>
+                    <div class="task-box">
+                        <div class="id-and-more">
+                            <p id="project-id">#EP001</p>
+                            <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                        </div>
+                        <p class="task-name">Exportar assets para o front-end</p>
+                        <div class="created-content">
+                            <p class="space-category desing">Desing</p>
+                            <p class="space-category desenvolvimento">Desenvolvimento</p>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="tasks">
-                           <!-- <input type="text" placeholder="Digite a Task"> -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ducimus necessitatibus recusandae</p>
-                            <div class="dropdown">
-                                <button class="dropdown-btn">Adicionar Categorias</button>
-                                <div class="dropdown-content">
-                                    <button class="desing">Desing</button>
-                                    <button class="desenvolvimento">Desenvolvimento</button>
-                                    <button class="marketing">Marketing</button>
-                                    <button class="QA">Q&A</button>
-                                </div>
-                            </div>
+                    <div class="task-box">
+                        <div class="id-and-more">
+                            <p id="project-id">#EP002</p>
+                            <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                        </div>
+                        <p class="task-name">Revisar estratégia de SEO</p>
+                        <div class="categorys-task">
+                            <p class="space-category marketing">Marketing</p>
+                            <p class="space-category qa">Q&A</p>
+                        </div>
+                    </div>
+                    <div class="task-box">
+                        <div class="id-and-more">
+                            <p id="project-id">#EP003</p>
+                            <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                        </div>
+                        <p class="task-name">Realizar reunião de equipe</p>
+                        <div class="categorys-task">
+                            <p class="space-category marketing">Marketing</p>
+                            <p class="space-category qa">Q&A</p>
+                            <p class="space-category desing">Desing</p>
+                            <p class="space-category desenvolvimento">Desenvolvimento</p>
                         </div>
                     </div>
                 </article>
-                <article>
-                    <div class="todo">
+                <article class="step">
+                    <div class="step-head">
                         <div class="phase">
-                            <img src="img/icone_to-do.svg" alt="Ícone To-do" class="todo-icon">
-                            <h3>To-do</h3>
+                            <p class="step-number-two-color step-number-circle">2</p>
+                            <h3 class="step-name">Doing</h3>
                         </div>
-                        <img src="img/more.png" class="more-img" alt="Mais opções">
+                        <img src="img/more.png" class="step-more-img" alt="Mais opções">
                     </div>
-                    <div class="box">
-                        <div class="tasks">
-                           <input type="text" class="new-class-input" placeholder="Digite a Task">
-                            <div class="dropdown">
-                                <button class="dropdown-btn">Adicionar Categorias</button>
-                                <div class="dropdown-content">
-                                    <button class="desing">Desing</button>
-                                    <button class="desenvolvimento">Desenvolvimento</button>
-                                    <button class="marketing">Marketing</button>
-                                    <button class="QA">Q&A</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="task-box">
+                        <input type="text" class="new-task-input" placeholder="Digite a nova tarefa...">
+                        <button type="button" class="add-category-btn">
+                            <img src="img/add-category.svg" alt="Adicionar categorias">
+                            <p>Adicionar Categorias</p>
+                        </button>
+                        <button type="submit" class="add-task-btn">
+                            Adicionar Tarefa
+                        </button>
                     </div>
-                    <div class="box">
-                        <div class="tasks">
-                           <!-- <input type="text" placeholder="Digite a Task"> -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ducimus necessitatibus recusandae</p>
-                            <div class="created-content">
-                                <button class="desing">Desing</button>
-                                <button class="desenvolvimento">Desenvolvimento</button>
-                            </div>
+                </article>
+                <article class="step">
+                    <div class="step-head">
+                        <div class="phase">
+                            <p class="step-number-three-color step-number-circle">3</p>
+                            <h3 class="step-name">Done</h3>
                         </div>
+                        <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                    </div>
+                    <div class="task-box">
+                        <input type="text" class="new-task-input" placeholder="Digite a nova tarefa...">
+                        <button type="button" class="list-category-btn">
+                            <div class="list-category-header">
+                                <img src="img/list-categorys.svg" alt="Adicionar categorias">
+                                <p>Adicionar Categorias</p>
+                            </div>
+                            <div class="list-category-cards">
+                                <p class="space-category marketing">Marketing</p>
+                                <p class="space-category qa-checked">Q&A <img src="img/check-qa.svg" alt="q&a"></p>
+                                <p class="space-category desing">Desing</p>
+                                <p class="space-category desenvolvimento-checked">Desenvolvimento <img src="img/check-dev.svg" alt="desenvolvimento"></p>
+                            </div>
+                        </button>
+                        <button type="submit" class="add-task-btn">
+                            Adicionar Tarefa
+                        </button>
                     </div>
                 </article>
             </section>
