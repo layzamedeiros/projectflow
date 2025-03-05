@@ -14,7 +14,7 @@
     --step-two-color: #F57EB2;
     --step-three-color: #D6A439;
     --step-four-color: #8DEB75;
-    --design-category-color: #DB9B10;
+    --design-category-color: #bf8811;
     --design-category-back: #FDF6E2;
     --design-category-check: #FFE59C;
     --development-category-color: #39A81D;
@@ -211,6 +211,9 @@ main {
     cursor: pointer;
 }
 
+.add-step-button {
+    cursor: pointer;
+}
 
 section {
     display: flex;
@@ -248,20 +251,20 @@ section {
     color: var(--cor-fundo-primario);
 }
 
-.step-number-one-color {
+.step-number-1-color {
     background-color: var(--step-one-color);
 }
 
-.step-number-two-color {
+.step-number-2-color {
     background-color: var(--step-two-color);
 }
 
-.step-number-three-color {
+.step-number-3-color {
     background-color: var(--step-three-color);
 }
 
-.step-number-four-color {
-    background-color: var(--step-four-color-color);
+.step-number-4-color {
+    background-color: var(--step-four-color);
 }
 
 .step-name {
@@ -271,9 +274,22 @@ section {
     width: 100px;
 }
 
+.options-step {
+    display: flex;
+    gap: 10px;
+}
+
 .step-more-img {
     width: 14px;
     margin: 0 5px 0 0;
+}
+
+.step-delete-img {
+    width: 16px;
+}
+
+.step-add-task-img {
+    width: 16px;
 }
 
 .id-and-more {

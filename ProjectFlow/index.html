@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logoico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -56,18 +57,21 @@
                             Buscar
                         </button>
                     </div>
-                    <img src="img/icone-add-etapa.svg" alt="Adicionar nova etapa">
+                    <img src="img/icone-add-etapa.svg" id="add-step-button" class="add-step-button" alt="Adicionar nova etapa">
                     <img src="img/icone-compartilhar.svg" alt="Compartilhar projeto">
                 </div>
             </div>
-            <section>
+            <section id="all-steps">
                 <article class="step">
                     <div class="step-head">
                         <div class="phase">
-                            <p class="step-number-one-color step-number-circle">1</p>
+                            <p class="step-number-1-color step-number-circle">1</p>
                             <h3 class="step-name">To-do</h3>
                         </div>
-                        <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                        <div class="options-step">
+                            <img src="img/delete.svg" class="step-delete-img" alt="Mais opções">
+                            <img src="img/add-task-img.svg" class="step-add-task-img" alt="Adicionar nova tarefa">
+                        </div>
                     </div>
                     <div class="task-box">
                         <div class="id-and-more">
@@ -80,38 +84,17 @@
                             <p class="space-category desenvolvimento">Desenvolvimento</p>
                         </div>
                     </div>
-                    <div class="task-box">
-                        <div class="id-and-more">
-                            <p id="project-id">#EP002</p>
-                            <img src="img/more.png" class="step-more-img" alt="Mais opções">
-                        </div>
-                        <p class="task-name">Revisar estratégia de SEO</p>
-                        <div class="categorys-task">
-                            <p class="space-category marketing">Marketing</p>
-                            <p class="space-category qa">Q&A</p>
-                        </div>
-                    </div>
-                    <div class="task-box">
-                        <div class="id-and-more">
-                            <p id="project-id">#EP003</p>
-                            <img src="img/more.png" class="step-more-img" alt="Mais opções">
-                        </div>
-                        <p class="task-name">Realizar reunião de equipe</p>
-                        <div class="categorys-task">
-                            <p class="space-category marketing">Marketing</p>
-                            <p class="space-category qa">Q&A</p>
-                            <p class="space-category desing">Desing</p>
-                            <p class="space-category desenvolvimento">Desenvolvimento</p>
-                        </div>
-                    </div>
                 </article>
                 <article class="step">
                     <div class="step-head">
                         <div class="phase">
-                            <p class="step-number-two-color step-number-circle">2</p>
+                            <p class="step-number-2-color step-number-circle">2</p>
                             <h3 class="step-name">Doing</h3>
                         </div>
-                        <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                        <div class="options-step">
+                            <img src="img/delete.svg" class="step-delete-img" alt="Mais opções">
+                            <img src="img/add-task-img.svg" class="step-add-task-img" alt="Adicionar nova tarefa">
+                        </div>
                     </div>
                     <div class="task-box">
                         <input type="text" class="new-task-input" placeholder="Digite a nova tarefa...">
@@ -127,10 +110,13 @@
                 <article class="step">
                     <div class="step-head">
                         <div class="phase">
-                            <p class="step-number-three-color step-number-circle">3</p>
+                            <p class="step-number-3-color step-number-circle">3</p>
                             <h3 class="step-name">Done</h3>
                         </div>
-                        <img src="img/more.png" class="step-more-img" alt="Mais opções">
+                        <div class="options-step">
+                            <img src="img/delete.svg" class="step-delete-img" alt="Deletar etapa">
+                            <img src="img/add-task-img.svg" class="step-add-task-img" alt="Adicionar nova tarefa">
+                        </div>
                     </div>
                     <div class="task-box">
                         <input type="text" class="new-task-input" placeholder="Digite a nova tarefa...">
